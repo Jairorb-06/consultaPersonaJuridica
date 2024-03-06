@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Consulta Ubicabilidad",
+  "version": "1.0",
+  "description": "Una extensión que automatiza la consulta de ubicabilidad por propietarios.",
+  "permissions": ["activeTab", "scripting", "identity", "tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "sandbox": {
+		"pages": ["sandbox.html"]
+	},
+  "content_security_policy": {
+		"sandbox": "sandbox allow-scripts; script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com"
+	},
+  "host_permissions": ["*://*/*"]
+}
+
